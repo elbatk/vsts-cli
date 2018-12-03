@@ -19,7 +19,9 @@ def configure(defaults=None, collect_telemetry=None, enable_log_file=None, use_g
               default_output=None, disable_version_check=None, list_config=False):
     """Configure the VSTS CLI or view your configuration.
     :param defaults: Space separated 'name=value' pairs for common arguments defaults,
-        e.g. '--defaults output=table arg=value' Use '' to clear the defaults, e.g. --defaults output=''.
+        e.g. '--defaults output=table arg=value' 
+        Use '' to clear the defaults, e.g. --defaults instance='' project='' output=''.
+        Allowed values for arg are: output, instance and project.
     :type defaults: str
     :param collect_telemetry: Microsoft would like to collect anonymous VSTS CLI usage data to
         improve our CLI.  Participation is voluntary and when you choose to
