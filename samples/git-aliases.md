@@ -1,8 +1,8 @@
-# Using Azure Devops CLI with Git
+# Using Azure DevOps CLI with Git
 
-You can configure the Azure Devops CLI to add git aliases for common git-based Azure Devops CLI commands like creating or adding reviewers to pull requests.
+You can configure the Azure DevOps CLI to add git aliases for common git-based Azure DevOps CLI commands like creating or adding reviewers to pull requests.
 
-## Configure Azure Devops CLI to add git aliases 
+## Configure the Azure DevOps CLI to add git aliases 
 
 Run the `az devops configure` command with the `--use-git-aliases` flag set to `yes` to set up git aliases:
 
@@ -16,19 +16,19 @@ az devops configure --use-git-aliases yes
 
 ### Creating a pull request:
 
-| Azure Devops CLI Command                                    | git alias command                                                  |
+| Azure DevOps CLI Command                                    | git alias command                                                  |
 | ----------------------------------------------------------- | ------------------------------------------------------------------ |
 | az repos pr create --target-branch {branch\_name}           | git pr create --target-branch {branch\_name}                       |
 
 
 ### Add reviewers to a pull request:
 
-| Azure Devops CLI Command                                    | git alias command                                                  |
+| Azure DevOps CLI Command                                    | git alias command                                                  |
 | ----------------------------------------------------------- | ------------------------------------------------------------------ |
 | az repos pr reviewers add --id # --reviewers {name}         | git pr reviewers add --id # --reviewers {name}                     |
 
 ### Set a pull request to auto-complete:
 
-| Azure Devops CLI Command                                    | git alias command                                                  |
+| Azure DevOps CLI Command                                    | git alias command                                                  |
 | ----------------------------------------------------------- | ------------------------------------------------------------------ |
 | az repos pr update --id # --auto-complete on                | git pr update --id # --auto-complete on                            |
